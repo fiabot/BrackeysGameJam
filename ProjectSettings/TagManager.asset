@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - Walls
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Ghost
+  - MiniMap
+  - BothCams
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enviroment
+    uniqueID: 3487642277
+    locked: 0
+  - name: backGroundElements
+    uniqueID: 3304189595
+    locked: 0
+  - name: Interactables
+    uniqueID: 248880683
+    locked: 0
+  - name: NPCS
+    uniqueID: 2751160337
+    locked: 0
+  - name: Player
+    uniqueID: 2802697431
+    locked: 0
+  - name: UI
+    uniqueID: 3723999197
+    locked: 0
