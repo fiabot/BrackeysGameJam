@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 178434815752818503}
   - component: {fileID: 178434815752818500}
   m_Layer: 8
-  m_Name: WeddingGrandpa
+  m_Name: BridesMaid1
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -1543806959
   m_SortingLayer: 4
   m_SortingOrder: 10
-  m_Sprite: {fileID: -8938776606296537861, guid: 8e1db62655f68b14bbab17eb5c2886c9,
+  m_Sprite: {fileID: -6555093386582171727, guid: 0b556a7290af8db45ab5b9ac98e9d201,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -136,7 +136,7 @@ Animator:
   m_GameObject: {fileID: 178434815752818496}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d7e12252e5ae3346a30cfae48eb260d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3a81facf133be7c4fb01ce9426f71cf9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
