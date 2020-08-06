@@ -219,6 +219,10 @@ public class God : MonoBehaviour
 
     public void ghostDestroyed()
     {
-        ghostSpawned--; 
+        ghostSpawned--;
+        if (ghostSpawned <= itemsRemaining && GetClosestObject() != null)
+        {
+            startGhosts();
+        }
     }
 }

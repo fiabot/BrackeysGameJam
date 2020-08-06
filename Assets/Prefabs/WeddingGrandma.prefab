@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018279e2accc45247866aec27c63d88b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
   sprite: {fileID: 178434815752818497}
   anim: {fileID: 178434815752818503}
   path: {fileID: 0}

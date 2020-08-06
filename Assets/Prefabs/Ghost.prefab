@@ -126,6 +126,7 @@ MonoBehaviour:
   blowRange: 13
   line: {fileID: 1890594433066970463}
   kickBack: 15
+  maxDistance: 30
 --- !u!70 &6163609719240982285
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -15,7 +15,8 @@ public class Ghost : MonoBehaviour
     MemoryObj obj;
     public LineRenderer line;
     public float kickBack;
-    Vector3 position; 
+    Vector3 position;
+    public float maxDistance; 
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +67,7 @@ public class Ghost : MonoBehaviour
             {
                 if (target == null)
                 {
+                    
                     if (God.instance.GetClosestObject() == null)
                     {
                         followingTarget = false;
@@ -75,11 +77,21 @@ public class Ghost : MonoBehaviour
                     else
                     {
                         target = God.instance.GetClosestObject().position;
-                        obj = God.instance.GetClosestObject().memoryObject;
-                        obj.hasGhost = true;
+
+                        float dist = Vector3.Distance(transform.position, target.position); 
+                        if(dist > maxDistance)
+                        {
+                            Debug.Log("Distance Too great");
+                            followingTarget = false;
+                            Destroy(gameObject);
+                            God.instance.ghostDestroyed();
+                        }
+                        else
+                        {
+                            obj = God.instance.GetClosestObject().memoryObject;
+                            obj.hasGhost = true;
+                        }  
                     }
-
-
                 }
                 else
                 {
