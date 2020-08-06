@@ -16,4 +16,22 @@ public class LevelLoader : MonoBehaviour
         Debug.Log("Loading: "+ level);
         SceneManager.LoadScene(level); 
     }
+
+    public void loadFirstScene()
+    {
+        LoadSwitch("Intro", "LevelSelect", "hasPlayed"); 
+    }
+
+    public void LoadSwitch(string firstTime, string secondTime, string keyWord)
+    {
+        if(PlayerPrefs.GetInt(keyWord,0)== 0)
+        {
+            PlayerPrefs.SetInt(keyWord, 1);
+            SceneManager.LoadScene(firstTime); 
+        }
+        else
+        {
+            SceneManager.LoadScene(secondTime); 
+        }
+    }
 }

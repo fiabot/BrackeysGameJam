@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class God : MonoBehaviour
 {
+    public int levelToUnlock; 
     public static God instance;
     public ObjTemplate[] objects;
     public float ghostTime;
@@ -62,7 +63,8 @@ public class God : MonoBehaviour
     }
 
     public void GameOver(){
-        SoundManager.instance.playGoodGameOver(); 
+        SoundManager.instance.playGoodGameOver();
+        PlayerPrefs.SetInt("level", levelToUnlock); 
         gameOverScreen.SetActive(true);
         Time.timeScale = 0; 
     }
