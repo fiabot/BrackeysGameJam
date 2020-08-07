@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7838389423530651989}
   - component: {fileID: 7838389423530651986}
   - component: {fileID: 7838389423530651987}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MemoryObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 7838389423636149108}
   - component: {fileID: 7838389423636149110}
   - component: {fileID: 7838389423636149111}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WorkingEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

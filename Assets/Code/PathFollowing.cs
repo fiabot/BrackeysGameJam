@@ -9,7 +9,8 @@ public class PathFollowing : MonoBehaviour
     public Animator anim; 
     Transform target;
     public Path path;
-    public Transform sight; 
+    //public Transform sight;
+    public SightCone cone; 
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +23,23 @@ public class PathFollowing : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         anim.SetBool("isMoving", Mathf.Abs(dir.x) + Mathf.Abs(dir.y) > 0);
 
+        if(cone != null)
+        {
+            cone.SetOrigin(transform.position);
+        }
+
         if(Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
         {
             if(dir.x > 0)
             {
-                sight.eulerAngles = new Vector3(0, 0, 0);
+                //sight.eulerAngles = new Vector3(0, 0, 0);
+                cone.setAimDirection(90);
+                
             }
             else if (dir.x < 0)
             {
-                sight.eulerAngles = new Vector3(0, 0, 180);
+                //sight.eulerAngles = new Vector3(0, 0, 180);
+                cone.setAimDirection(-90);
             }
 
         }
@@ -38,11 +47,14 @@ public class PathFollowing : MonoBehaviour
         {
             if (dir.y > 0)
             {
-                sight.eulerAngles = new Vector3(0, 0, 90);
+                //sight.eulerAngles = new Vector3(0, 0, 90);
+                cone.setAimDirection(180);
+
             }
             else if (dir.y < 0)
             {
-                sight.eulerAngles = new Vector3(0, 0, -90);
+                //sight.eulerAngles = new Vector3(0, 0, -90);
+                cone.setAimDirection(0);
             }
         }
 
