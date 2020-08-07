@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
         float angle = (180 / Mathf.PI) * AngleRad;
 
         partToRotate.rotation = Quaternion.Euler(0f, 0f, angle);
+        Debug.Log(Quaternion.Euler(0f, 0f, angle));
         anim.SetTrigger("Blow");
     }
 }
