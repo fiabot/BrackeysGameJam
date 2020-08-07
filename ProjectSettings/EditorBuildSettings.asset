@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wedding.unity
     guid: e0af949d7db0e304a9c86d1d449e253a
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 77323177aa5d0fe40a115bc99be524e6
   m_configObjects: {}

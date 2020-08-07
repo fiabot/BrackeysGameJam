@@ -843,8 +843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -68, y: -154}
-  m_SizeDelta: {x: 860.88794, y: 287.6322}
+  m_AnchoredPosition: {x: -68, y: -168}
+  m_SizeDelta: {x: 860.88794, y: 292.2179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1978727788
 MonoBehaviour:
@@ -867,7 +867,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b47f17ef994b9c44d86ee80f56fd9716, type: 3}
-    m_FontSize: 115
+    m_FontSize: 106
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -878,7 +878,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let Me Remeber
+  m_Text: I Will Remember for You
 --- !u!222 &1978727789
 CanvasRenderer:
   m_ObjectHideFlags: 0

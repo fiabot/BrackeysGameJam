@@ -64,7 +64,11 @@ public class God : MonoBehaviour
 
     public void GameOver(){
         SoundManager.instance.playGoodGameOver();
-        PlayerPrefs.SetInt("level", levelToUnlock); 
+        if(PlayerPrefs.GetInt("level",0) < levelToUnlock)
+        {
+            PlayerPrefs.SetInt("level", levelToUnlock);
+        }
+        
         gameOverScreen.SetActive(true);
         Time.timeScale = 0; 
     }
